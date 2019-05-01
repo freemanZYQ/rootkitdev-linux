@@ -1,1 +1,0 @@
-cmd_/home/krash/works/rootkitdev-linux/module01/helloworld.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/krash/works/rootkitdev-linux/module01/helloworld.ko /home/krash/works/rootkitdev-linux/module01/helloworld.o /home/krash/works/rootkitdev-linux/module01/helloworld.mod.o ;  true

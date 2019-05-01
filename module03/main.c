@@ -7,14 +7,13 @@
 
 MODULE_LICENSE("GPL");
 
-
 #define DRIVER_AUTHOR "SourceCodeDeleted"
 #define DRIVER_DESC "Some hello world param driver"
 MODULE_AUTHOR(DRIVER_AUTHOR);
 MODULE_DESCRIPTION(DRIVER_DESC);
 
 
-MODULE_SUPPORTED_DEVICE("testdevice");
+//MODULE_SUPPORTED_DEVICE("testdevice");
 
 
 static char *MyString = "";
@@ -29,14 +28,7 @@ MODULE_PARM_DESC(MyString, "This is a string that gets echoed.");
  }
  
 
- static void HelloExit(void){
-
-    printk(KERN_INFO "ROOTKITDEV_DEBUG : GOODBYE WORLD \n");
-    
-
- }
 
 
 module_init(HelloInit);
-module_exit(HelloExit);
 

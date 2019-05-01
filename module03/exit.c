@@ -1,13 +1,9 @@
 #include <linux/module.h>
 #include <linux/kernel.h> // Debug messages
 #include <linux/init.h>   //macros
+#include <linux/moduleparam.h>
+#include <linux/stat.h>
 
- static int HelloInit(void){
-
-    printk(KERN_INFO "ROOTKITDEV_DEBUG: HELLO WORLD! \n");
-    return 0; 
- }
- 
 
  static void HelloExit(void){
 
@@ -17,7 +13,5 @@
  }
 
 
-module_init(HelloInit);
 module_exit(HelloExit);
 
-MODULE_LICENSE("GPL");
